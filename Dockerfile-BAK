@@ -1,0 +1,4 @@
+FROM navinhariharan/dhanu-lora-flux:latest
+COPY ./worker_runpod.py /content/ComfyUI/worker_runpod.py
+WORKDIR /content/ComfyUI
+CMD python worker_runpod.py
